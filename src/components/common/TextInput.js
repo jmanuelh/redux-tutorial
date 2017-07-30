@@ -13,11 +13,11 @@ const TextInput = ({name, label, onChange, placeHolder, value, error}) => {
                 <input
                     type="text"
                     name={name}
-                    clasaName="form-control"
+                    className="form-control"
                     placeHolder={placeHolder}
                     value={value}
                     onChange={onChange} />
-                    {error && <div className="alert alert-dange">{error}</div>}
+                    {error && <div className="alert alert-danger">{error}</div>}
             </div>
         </div>
     );
