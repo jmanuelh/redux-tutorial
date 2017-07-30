@@ -17,8 +17,7 @@ describe('Store', () => {
         store.dispatch(action);
 
         // assert
-        const actual = store.getState().corses[0];
-        expect(actual.length).toBe(1);
-        expect(actual).toBe(course);
+        const actual = store.getState().courses[0];
+        expect(actual).toEqual(course);
     });
 });
